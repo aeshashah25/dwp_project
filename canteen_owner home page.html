@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+text-align: center;
+margin-left: 140px;
+padding-right: 50px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  
+}
+
+/*content*/
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openCity(event, 'HOME')">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'CANTEEN_ITEM')">CANTEEN ITEM</button>
+  <button class="tablinks" onclick="openCity(event, 'ORDER')">ORDER </button>
+  <button class="tablinks" onclick="openCity(event, 'GROWTH_GRAPH')">GROWTH GRAPH </button>
+
+</div>
+
+
+
+<div id="HOME" class="tabcontent" >
+  <h2 style="text-align: center; margin-top: 5px; text-decoration-color: aqua; "><i>PROFILE</i></h2>
+
+  
+  
+    <div class="container" style="margin-top: 30px;border-top:1px solid black; border-right:1px  solid black;
+    border-bottom:1px solid black; border-left:1px  solid black;">
+      <h2 >EDIT YOUR PROFILE HERE</h2>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-bottom: 5px;">
+        OPEN PROFILE
+      </button>
+    
+      
+      <div class="modal" id="myModal" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            
+            <div class="modal-header" >
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            
+            <div class="modal-body">
+              Modal body..
+            </div>
+            
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  
+  
+ </div>
+ 
+ <div id="CANTEEN_ITEM" class="tabcontent">
+   <P>AVAILABLE OR NOT</P>
+ </div>
+ 
+ <div id="ORDER" class="tabcontent">
+   <P> ORDER SHOW WITH ADDRESS AND PAYMENT STATUS PAID OR NOT.</P>
+ 
+ </div>
+ <div id="GROWTH_GRAPH" class="tabcontent">
+   <P> GRAPH SHOWING</P>
+ 
+ </div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+   
+</body>
+</html> 

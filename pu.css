@@ -1,0 +1,82 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("https://images.static-collegedunia.com/public/image/b6d7861486739115516a1dc496766ac2.jpeg?tr=w-960,h-470,c-force");
+  filter: blur(10px);
+  -webkit-filter: blur(2px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.input-container {
+display: -ms-flexbox; 
+display: flex;
+width: 100%;
+margin-bottom: 15px;
+}
+
+.icon {
+padding: 10px;
+background: dodgerblue;
+color: white;
+min-width: 50px;
+text-align: center;
+}
+
+.input-field {
+width: 100%;
+padding: 10px;
+outline: none;
+}
+
+.input-field:focus {
+border: 2px solid dodgerblue;
+}
+
+.btn {
+margin-top: 10px;
+background-color: dodgerblue;
+color: white;
+padding: 15px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+float: left;
+}
+
+.btn:hover {
+opacity: 1;
+}
+.radio {
+background-color: dodgerblue;
+color: white;
+margin-top: 10px;
+padding: 15px 20px ;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.8;
+
+
+}
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}

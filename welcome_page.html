@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WELCOME TO PU FOOD</title>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/78bc7a815d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="f_c.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/08dde0cda6.js"></script>
+
+    <style>
+        .navbar-inverse .navbar-nav>li>a {
+            color: rgb(255, 255, 255);
+
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: rgb(255, 255, 255) !important;
+            font-size: 20px;
+
+        }
+
+        .navbar-inverse .navbar-brand:hover {
+            color: rgb(255, 255, 255) !important;
+
+        }
+
+        .btn {
+            margin: 10px;
+            background-color: transparent;
+            border: none;
+        }
+
+        .col-container {
+            display: table;
+            /* Make the container element behave like a table */
+            width: 100%;
+            /* Set full-width to expand the whole page */
+
+
+        }
+
+        .col {
+            display: table-cell;
+            /* Make elements inside the container behave like table cells */
+            padding: 0 5PX;
+        }
+
+        /* fornav */
+        .autocomplete {
+            position: relative;
+            display: inline-block;
+        }
+
+        input {
+            border: 1px solid transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type=text] {
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+
+        input[type=submit] {
+            background-color: DodgerBlue;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            /*position the autocomplete items to be the same width as the container:*/
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #d4d4d4;
+        }
+
+        /*when hovering an item:*/
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+
+        /*when navigating through the items using the arrow keys:*/
+        .autocomplete-active {
+            background-color: DodgerBlue !important;
+            color: #ffffff;
+        }
+
+        #section3 {
+            padding-top: 0px;
+            min-height: 600px;
+            color: #fff;
+        }
+
+        .css7 {
+            text-align: center;
+            margin-top: 50px;
+            color: black;
+        }
+
+        .curv {
+            height: 300px;
+            background-color: gray;
+            /* clip-path: ellipse(117% 100% at 10% 110%); */
+
+
+        }
+
+        .container-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .footer {
+            background-color: #eee;
+            ;
+
+        }
+
+        .about {
+            color: rgb(26, 25, 25);
+        }
+       
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top"
+        style="background-color: rgba(0, 0, 0, 0.5);border-radius: 0px;   border: none;">
+        <div class="container-fluid navnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">FOOD DELIVERY PLUGIN</a>
+            </div>
+
+            <!-- nav -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+
+                </ul>
+                <form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                style="margin: 10px;color: rgb(255, 255, 255); ;">SIGNUP
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu ">
+                                <li><a href="customer.html">Customer</a></li>
+                                <li><a href="CANTEEN_OWNER.html">Canteen owner</a></li>
+                                <li><a href="#">Delivery Boy</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="pu.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- //body_1 -->
+    <div class="container-fluid" style="padding: 0px;">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner ">
+                <div class="item active">
+                    <img src="https://images.pexels.com/photos/693267/pexels-photo-693267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Los Angeles" style="width:100%;">
+
+                </div>
+
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="New york" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div id="section3" class="container">
+        <h1 class="css7">OUR SATISFIED SERVICES</h1>
+        <hr>
+        <div class="row" style="text-align: center; color: black;">
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-clock fa-3x" arial-hidden="true"></i>
+                        <h4>TIME EFFICIENT</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                        <h4>LIVE TRACKING</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-user-tie fa-3x"></i>
+                        <h4>GIVES EMPLOYMENT</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-smile-wink fa-3x"></i>
+                        <h4>EASY ORDER</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="text-align: center; color: black;">
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-clock fa-3x" arial-hidden="true"></i>
+                        <h4>EASY PAYMENT</h4>
+                        <h7>We provide both Cash On Delivery and UPI.</h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                        <h4>LIVE TRACKING</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-user-tie fa-3x"></i>
+                        <h4>GIVES EMPLOYMENT</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <div class="jumbotron css9">
+                        <i class="fas fa-smile-wink fa-3x"></i>
+                        <h4>EASY ORDER</h4>
+                        <h7>Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</h7>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about_us -->
+
+
+
+        </div>
+
+    </div>
+    <div class="container text-center footer">
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-3">
+                    <h4>Why Food delivery Plugin ?</h4>
+                    <hr style="height:1px;color:black;background-color:black" ;>
+                    <ul class="text-left">
+                        <li><a href="#" class="about">Time efficient</a></li>
+                        <li><a href="#" class="about">college canteen online for food ordering.</a>
+                        </li>
+                        <li><a href="#" class="about">This web provide us pre order the meal at your
+                                location.</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Do Register Your Self !</h4>
+                    <hr style="height:1px;color:black;background-color:black" ;>
+                    <ul class="text-left">
+                        <li><a href="customer.html" class="about">Customer</a></li>
+                        <li><a href="CANTEEN_OWNER.html" class="about">Canteen Owner</a></li>
+                        <li><a href="#" class="about">Delivery Boy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>Our Team</h4>
+                    <hr style="height:1px;color:black;background-color:black" ;>
+
+                    <ul class="text-left">
+                        <i class="fas fa-user about" style="font: height 30px;">Aesha Shah</i>
+                       <br><i class="fas fa-user about">Jainny Patni</i>
+                        <br><i class="fas fa-user about">Nisarg Patel</i>
+                        <br><i class="fas fa-user about">Neel Talati</i>
+                    </ul>
+
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <hr style="height:1px;color:black;background-color:black" ;>
+                    
+                    
+                    
+                      <form action="/action_page.php">
+                        <div class="form-group " style="text-align: start;">
+                            <label  style="color: black;" for="usr">Phone:</label>
+                            <input style="color: black" type="text" class="form-control" id="usr"
+                                placeholder="Enter Your Phone Num.">
+                        </div>
+                        <div class="form-group" style="text-align: start;">
+                            <label style="color: black" for="email">Email:</label>
+                            <input style="color: black" type="email" class="form-control"
+                                id="email" placeholder="Enter Email" name="email">
+                        </div>
+        
+                        
+                        <div class="form-group" style="color: black">
+                            <label style="color: black" for="comment"></label>
+                            <textarea style="color: black" class="form-control" rows="5"
+                                id="comment" placeholder="Any Message?."></textarea>
+                        </div>
+                        <button style="color: black" type="submit"
+                            class="btn btn-default">Submit</button>
+        
+                
+                    
+                    </body>
+                    </html>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<!--  -->
