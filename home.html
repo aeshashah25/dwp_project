@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="homecss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78bc7a815d.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="bgimg-1">
+        <nav style="background-color: rgba(255, 255, 255, 0.5);" class=" navbar navbar-expand-lg  ">
+            <a style="color: green;" class="navbar-brand" href="#">FOOD DELIVERY PLUGIN</a>
+            <button class="navbar-toggler btn-md" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span style="color: green;" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn button btn-md" data-toggle="modal" data-target="#myModal">
+                                <i style="color: green;" class="fa fa-filter" aria-hidden="true"> Filter</i>
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Modal Heading</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <!-- Modal body.. -->
+
+                                            <div class="tab">
+                                                <button class="tablinks" style="color:black;"
+                                                    onmouseover="openCity(event, 'popularity')">Short By
+                                                    popularity</button>
+                                                <button class="tablinks"
+                                                    onmouseover="openCity(event, 'Clusine')">Clusine</button>
+                                                <button class="tablinks"
+                                                    onmouseover="openCity(event, 'Rating')">Rating</button>
+                                                <button class="tablinks"
+                                                    onmouseover="openCity(event, 'cost per person')">Cost</button>
+                                            </div>
+
+                                            <div id="popularity" class="tabcontent">
+                                                <div>
+                                                    <div class="form-check popularity">
+                                                        <input class="form-check-input" type="radio" name="short_radio"
+                                                            id="short_radio1" value="option1" checked>
+                                                        <label class="form-check-label" for="short_radio1">
+                                                            popularity
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="form-check popularity">
+                                                        <input class="form-check-input" type="radio" name="short_radio"
+                                                            id="short_radio2" value="option2">
+                                                        <label class="form-check-label" for="short_radio2">
+                                                            Rating:High To Low
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="form-check popularity">
+                                                        <input class="form-check-input" type="radio" name="short_radio"
+                                                            id="short_radio3" value="option">
+                                                        <label class="form-check-label" for="short_radio3">
+                                                            Cost: Low To High
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="form-check popularity">
+                                                        <input class="form-check-input" type="radio" name="short_radio"
+                                                            id="short_radio3" value="option">
+                                                        <label class="form-check-label" for="short_radio3">
+                                                            Cost: High To Low
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="Clusine" class="tabcontent">
+                                                <h3>Clusine</h3>
+                                                <p>Clusine is the capital of France.</p>
+                                            </div>
+
+                                            <div id="Rating" class="tabcontent">
+                                                <h3>Rating</h3>
+                                                <!-- rating starts from here -->
+
+
+                                            </div>
+
+                                            <div id="cost per person" class="tabcontent">
+                                                <h3>cost per person</h3>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="1" max="1000" value="50" class="slider"
+                                                        id="myRange">
+                                                    <p>Cost Per person: <span id="s_bar"></span></p>
+                                                </div>
+
+                                                <script>
+
+                                                </script>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal">Save</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><button type="button" class="btn button btn-md ">
+                                <i style="color: green;" class="fa fa-leaf" aria-hidden="true"> Pure Veg</i>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#"><button type="button" class="btn button btn-md ">
+                                <i style="color: red;" class="fas fa-drumstick-bite"> Non-veg</i>
+                            </button>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="caption">
+                        <span style="font-family: 'Mukta', sans-serif;" class="border">PARUL UNIVERSITY</span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- canteen -->
+    <div class="container backimage">
+        <div class=" text-center">
+            <h1>Canteens </h1>
+            <hr>
+        </div>
+
+        <div class="container" style="background-color: whitesmoke;">
+
+            <div class="row justify-content-center px-mg-1">
+
+                <div class="col-lg-3">
+
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://cdn2.foodviva.com/static-content/food-images/tea-recipes/milk-tea-recipe/milk-tea-recipe.jpg"
+                            alt="" width="100%" class="img2">
+                        <h5>Bankcanteen <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://www.kohinoorfoods.co.uk/wp-content/uploads/2020/01/indo-chinese-food.jpg"
+                            alt="" width="100%" class="img2">
+                        <h5>Food Court <i class="fas fa-seedling"></i> <br></h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                         data-target="#exampleModal1">
+                            Launch demo modal
+                        </button>
+
+                        <!-- Modal -->
+                      
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://www.myyellowplate.com/wp-content/uploads/2021/06/Best-South-Indian-Restaurants-in-Delhi-2.jpg"
+                            alt="" width="100%" class="img2">
+                        <h5>New Foodcourt <i class="fas fa-seedling"></i> <br></h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                            Launch demo modal
+                        </button>
+
+                        Modal
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- items -->
+
+    <div class="container backimage">
+        <div class=" text-center">
+            <h1>Suggestions for you </h1>
+            <hr>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row justify-content-center px-mg-1">
+
+                <div class="col-lg-3">
+
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://cdn2.foodviva.com/static-content/food-images/tea-recipes/milk-tea-recipe/milk-tea-recipe.jpg"
+                            alt="" width="100%" class="img2">
+                        <h5> Breakfast <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://www.kohinoorfoods.co.uk/wp-content/uploads/2020/01/indo-chinese-food.jpg"
+                            alt="" width="100%" class="img2">
+                        <h5>Chinese Food <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://www.myyellowplate.com/wp-content/uploads/2021/06/Best-South-Indian-Restaurants-in-Delhi-2.jpg"
+                            alt="" width="100%" class="img2">
+                        <h5>South Indian Food <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <div class="row justify-content-center px-mg-1">
+                <div class="col-lg-3 ">
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://cf.bstatic.com/data/xphoto/1182x887/222/22281452.jpg?size=S" alt=""
+                            width="100%">
+                        <h5>Italian Food <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://m.economictimes.com/thumb/msid-71121981,width-1200,height-900,resizemode-4,imgsize-810723/butter-chicken-1.jpg"
+                            alt="" width="100%">
+                        <h5>Panjabi Food <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="jumbotron mainmenu ">
+                        <img src="https://b.zmtcdn.com/data/collections/83e7cf2e32f67c8c852cf595b2abbd5e_1618312184.jpg"
+                            alt="" width="100%">
+                        <h5>Thali <i class="fas fa-seedling"></i> <br></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- items -->
+
+    <div class="slideshow-container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h1 style="color: black;text-align: center;">Trending Canteen</h1>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="mySlides">
+            <div class="row slider-font">
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start">Mr.Idly
+                        <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span>
+                    </h4>
+                </div>
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Marco's Da Pizza <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span>
+                    </h4>
+                </div>
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Jagdish <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="row slider-font">
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Phonix <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span>
+                    </h4>
+                </div>
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Shree Rang <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span>
+                    </h4>
+                </div>
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Bank Canteen <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="row slider-font">
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/704971/pexels-photo-704971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Tea Post <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span></h4>
+                </div>
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/704971/pexels-photo-704971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Mummy n'yummy <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span></h4>
+                </div>
+                <div class="col-sm-4"><img class="top-trand"
+                        src="https://images.pexels.com/photos/704971/pexels-photo-704971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Avatar" width="100%">
+                    <hr>
+                    <h4 style="text-align: start;">Chocolate Room <span style="float: right;">
+                            <h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h5>
+                        </span></h4>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+ <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-">
+                        One of three columns
+                    </div>
+                    <div class="col-sm">
+                        One of three columns
+                    </div>
+                    <div class="col-sm">
+                        One of three columns
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+                data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // cost
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("s_bar");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+
+        // topcanteen
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // items
+
+
+    </script>
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
